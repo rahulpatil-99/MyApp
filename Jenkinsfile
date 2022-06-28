@@ -13,6 +13,8 @@ pipeline {
             steps {
                 echo 'Testing....'
                 sh 'node --version'
+                echo 'installing packages......'
+                npm install
             }
         }
         stage('Deploy') {
