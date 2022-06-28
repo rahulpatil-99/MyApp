@@ -14,7 +14,7 @@ pipeline {
                 echo 'Testing....'
                 sh 'node --version'
                 echo 'installing packages......'
-                npm install
+                sh 'npm install'
             }
         }
         stage('Deploy') {
