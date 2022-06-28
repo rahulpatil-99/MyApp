@@ -12,7 +12,7 @@ pipeline {
             }
             steps {
                 echo 'Testing....'
-                npm test
+                sh 'node --version'
             }
         }
         stage('Deploy') {
