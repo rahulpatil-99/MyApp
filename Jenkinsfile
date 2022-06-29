@@ -19,7 +19,7 @@ pipeline {
         stage('Build app') {
             steps {
                 echo 'Building app....'
-                sh 'npm build-android'
+                sh 'npm run build-android'
             }
         }
     }
