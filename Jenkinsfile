@@ -17,6 +17,11 @@ pipeline {
             }
         }
         stage('Build app') {
+            agent {
+                docker {
+                    image 'openjdk:11'
+                }
+            }
             steps {
                 echo 'Building app....'
                 sh 'npm run build-android'
