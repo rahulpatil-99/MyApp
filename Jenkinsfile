@@ -16,9 +16,10 @@ pipeline {
                 sh 'npm test'
             }
         }
-        stage('Deploy') {
+        stage('Build app') {
             steps {
-                echo 'Deploying....'
+                echo 'Building app....'
+                sh 'npm build-android'
             }
         }
     }
